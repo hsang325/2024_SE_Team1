@@ -12,3 +12,6 @@ For more details on the database schema and API endpoints, please refer to the f
 For more details on the Software Requirements Specification, please refer to the following Google Docs link:
 
 [Software Requirements Specification Documentation](https://docs.google.com/document/d/13t9zPQ4jw4ti35iKwZmpUgVFYSPINhDv/edit?rtpof=true&tab=t.0)
+
+
+개인 브랜치 만들어서 개발후 develop 브랜치에 올리기
