@@ -8,7 +8,7 @@ Yil Jang
 
 ## Core Components
 
-### Testing Code ('Main.kt')
+### Testing Code (`Main.kt`)
 - Test code for things below
 
 ### Claude API Wrapper (`Claude.kt`)
