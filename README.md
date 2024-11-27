@@ -1,4 +1,29 @@
-# SE Team 1
+# LLM-summarizer branch
+## Yil Jang
+### WIP
+Branch for LLM review summarizer
+
+
+Claude.kt -> REST API wrapper
+Summarizer.kt -> Review Summraizer wrapper
+
+List[Reviews] -> summarizer.summarizeReviews -> ReviewSummary
+
+in build.gradle.kts
+
+dependencies {
+    implementation("org.slf4j:slf4j-api:1.6.1")
+    implementation("org.slf4j:slf4j-simple:1.6.1")
+
+    val ktorVersion = "2.3.7"
+    implementation("io.ktor:ktor-client-core:$ktorVersion")
+    implementation("io.ktor:ktor-client-cio:$ktorVersion")
+    implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    testImplementation(kotlin("test"))
+}
+
 
 ## Database Schema and API Endpoints
 
