@@ -1,6 +1,6 @@
 # LLM-summarizer branch
 ## Yil Jang
-### WIP
+### Implementation without Lambda 
 Branch for LLM review summarizer
 
 
