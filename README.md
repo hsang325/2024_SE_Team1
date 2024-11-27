@@ -1,4 +1,4 @@
-# LLM Review Summarizer
+# LLM Review Summarizer(WIP - w/o lambda)
 
 ## Overview
 This branch implements a restaurant review summarization system using Claude LLM API.
