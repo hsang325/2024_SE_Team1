@@ -1,7 +1,9 @@
 # LLM Review Summarizer(WIP - w/o lambda)
+# LLM 리뷰 요약기(로컬)
 
 ## Overview
 This branch implements a restaurant review summarization system using Claude LLM API.
+클로드 AIP를 사용하여 리뷰 요약 기능을 구현
 
 ## Developer
 Yil Jang
@@ -10,13 +12,16 @@ Yil Jang
 
 ### Testing Code (`Main.kt`)
 - Test code for things below
+- 테스트용 코드(예시) 포함 파일
 
 ### Claude API Wrapper (`Claude.kt`)
 - REST API wrapper for Claude LLM
 - Handles API communication and response parsing
+- API 핸들링 클래스(직접 사용 비권장)
 
 ### Review Summarizer (`Summarizer.kt`)
 - Wrapper for review summarization logic
+- 리뷰 요약기 클래스
 - Input: `List<Review>`
 - Output: `ReviewSummary` 
 
