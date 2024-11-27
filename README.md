@@ -4,14 +4,15 @@
 Branch for LLM review summarizer
 
 
-Claude.kt -> REST API wrapper
+Claude.kt: REST API wrapper
 
-Summarizer.kt -> Review Summraizer wrapper
+Summarizer.kt: Review Summraizer wrapper
 
 List[Reviews] -> summarizer.summarizeReviews -> ReviewSummary
 
 in build.gradle.kts
 
+'''
 dependencies {
     implementation("org.slf4j:slf4j-api:1.6.1")
     implementation("org.slf4j:slf4j-simple:1.6.1")
@@ -23,6 +24,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
     testImplementation(kotlin("test"))
 }
+'''
 
 
 ## Database Schema and API Endpoints
