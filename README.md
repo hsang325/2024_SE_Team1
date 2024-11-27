@@ -18,7 +18,7 @@ Yil Jang
 ### Claude API Wrapper (`Claude.kt`)
 - REST API wrapper for Claude LLM
 - Handles API communication and response parsing
-- API 핸들링 클래스(직접 사용 비권장)
+- API 핸들링 클래스
 
 ### Review Summarizer (`Summarizer.kt`)
 - Wrapper for review summarization logic
