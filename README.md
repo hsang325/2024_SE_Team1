@@ -8,6 +8,9 @@ Yil Jang
 
 ## Core Components
 
+### Testing Code ('Main.kt')
+- Test code for things below
+
 ### Claude API Wrapper (`Claude.kt`)
 - REST API wrapper for Claude LLM
 - Handles API communication and response parsing
