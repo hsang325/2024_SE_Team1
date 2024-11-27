@@ -10,7 +10,7 @@ This branch implements a restaurant review summarization system using Claude LLM
 Yil Jang
 
 ## Example
-```
+```kotlin
     val apiKey = System.getenv("ANTHROPIC_API_KEY") ?: throw IllegalStateException("API key not found")
 
     // generateSummary interface 를 구현하는 llm Client class
