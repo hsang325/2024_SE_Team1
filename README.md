@@ -3,7 +3,8 @@
 
 ## Overview
 This branch implements a restaurant review summarization system using Claude LLM API.
-클로드 AIP를 사용하여 리뷰 요약 기능을 구현
+
+클로드 API를 사용하여 리뷰 요약 기능을 구현
 
 ## Developer
 Yil Jang
