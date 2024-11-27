@@ -1,30 +1,44 @@
-# LLM-summarizer branch
-## Yil Jang
-### Implementation without Lambda 
-Branch for LLM review summarizer
+# LLM Review Summarizer
 
+## Overview
+This branch implements a restaurant review summarization system using Claude LLM API.
 
-Claude.kt: REST API wrapper
+## Developer
+Yil Jang
 
-Summarizer.kt: Review Summraizer wrapper
+## Core Components
 
-List[Reviews] -> summarizer.summarizeReviews -> ReviewSummary
+### Claude API Wrapper (`Claude.kt`)
+- REST API wrapper for Claude LLM
+- Handles API communication and response parsing
 
-in build.gradle.kts
+### Review Summarizer (`Summarizer.kt`)
+- Wrapper for review summarization logic
+- Input: `List<Review>`
+- Output: `ReviewSummary` 
 
-'''
+## Dependencies
+Add the following to your `build.gradle.kts`:
+```kotlin
 dependencies {
+    // Logging
     implementation("org.slf4j:slf4j-api:1.6.1")
     implementation("org.slf4j:slf4j-simple:1.6.1")
+    
+    // Ktor
     val ktorVersion = "2.3.7"
     implementation("io.ktor:ktor-client-core:$ktorVersion")
     implementation("io.ktor:ktor-client-cio:$ktorVersion")
     implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+    
+    // JSON Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    
+    // Testing
     testImplementation(kotlin("test"))
 }
-'''
+```
 
 
 ## Database Schema and API Endpoints
