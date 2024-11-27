@@ -9,6 +9,36 @@ This branch implements a restaurant review summarization system using Claude LLM
 ## Developer
 Yil Jang
 
+## Example
+```
+    val apiKey = System.getenv("ANTHROPIC_API_KEY") ?: throw IllegalStateException("API key not found")
+
+    // generateSummary interface 를 구현하는 llm Client class
+    val llmClient = ClaudeClient(apiKey)
+
+    // llc Client class 의 wrapper
+    val summarizer = ReviewSummarizer(llmClient)
+
+    // Create sample reviews
+    val reviews = listOf(
+        Review(
+            ...
+        )
+    )
+
+    try {
+        val summary = summarizer.summarizeReviews(reviews)
+        println("요약:")
+        println(summary.narrativeSummary)
+        println("\n별점 평균: ${summary.overallRating}")
+        println("리뷰 갯수: ${summary.reviewCount}")
+        println("리뷰 시점: ${summary.timeRange}")
+    } catch (e: Exception) {
+        println("Error: ${e.message}")
+        e.printStackTrace()
+    }
+```
+
 ## Core Components
 
 ### Testing Code (`Main.kt`)
